@@ -1,0 +1,432 @@
+ul {
+  list-style: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  transition: 2s;
+  margin-bottom: 40px;
+}
+.navbar .container {
+  padding: 0;
+}
+.navbar img {
+  margin-left: 2px;
+}
+.navbar button {
+  height: 49px;
+  background-color: #f15f57;
+  color: white;
+  max-width: 130px;
+  font-size: 14px;
+  transition: 0.2s;
+  font-weight: bold;
+}
+.navbar button:hover {
+  background-color: #ff0d00;
+  transform: scale(1.05);
+  border-radius: 8px;
+}
+.navbar-collapse {
+  text-align: center;
+}
+.navbar-collapse ul li {
+  min-width: fit-content;
+}
+.navbar-collapse ul li a {
+  font-size: 14px;
+  font-family: "Poppins";
+  color: #3e4581;
+  transition: 0.3s;
+}
+.navbar-collapse ul li a:hover {
+  color: #3685da;
+  transform: scale(1.1);
+}
+.navbar-toggler[aria-expanded="true"],
+.navbar-toggler:hover {
+  box-shadow: 0px 0px 14px #f2857fd9;
+  border-color: transparent;
+  transition: 0.6s;
+}
+@media (max-width: 767px) {
+  .navbar-collapse ul {
+    margin: 18px auto;
+  }
+  .navbar-collapse ul li {
+    margin: 4px auto;
+    font-size: 18px;
+  }
+  .navbar button {
+    background-color: #f15f57;
+    color: white;
+    max-width: 80%;
+  }
+}
+/* end nav */
+
+/* pharm */
+.pharm .row {
+  align-items: center;
+  justify-content: center;
+}
+.pharm .about-pharm .title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.pharm .about-pharm .title h1 {
+  font-size: 64px;
+  font-weight: bold;
+  color: #0056a2;
+  /* font-family: Agency FB; */
+}
+.pharm .about-pharm .text {
+  color: #3e4581;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin: 0px auto 25px;
+}
+.pharm .about-pharm .it {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #ce3e3e;
+}
+.pharm .about-pharm .go-app,
+.pharm .about-pharm .eg {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.pharm .about-pharm .eg li a {
+  margin-right: 30px;
+  font-size: 20px;
+  color: #3e92ce;
+}
+
+.eg li:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 772px) {
+  .pharm .row {
+    text-align: center;
+  }
+  .pharm .about-pharm .go-app,
+  .pharm .about-pharm .eg,
+  .pharm .about-pharm .title {
+    justify-content: center;
+  }
+}
+/* end pharm */
+
+/* done */
+.done {
+  background-color: #f8f8ff;
+  margin-top: 60px;
+  padding: 30px 0px;
+}
+.done .container {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.done .part1 {
+  text-align: center;
+  max-width: 565px;
+  margin-bottom: 20px;
+}
+.part1 h1 {
+  font-size: 60px;
+  color: #3e4581;
+}
+.part1 p {
+  color: #3e4581;
+}
+.part2 {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1087px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 2px solid #70707075;
+  box-shadow: 0px 0px 3px #70707070;
+}
+.part2 .comuunity {
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.part2 .comuunity h2 {
+  font-size: 23px;
+  font-family: "Gilroy ☞";
+  font-weight: bold;
+  color: #3e4581;
+}
+.part2 .comuunity img {
+  border: 1px #707070ab solid;
+  border-radius: 40px;
+}
+.part2 .line span {
+  display: block;
+  height: 167.29px;
+  width: 3px;
+  background-color: #707070;
+}
+.part2 .title {
+  font-size: 24px;
+  color: #3e4581;
+}
+.part2 .title p:first-of-type {
+  margin-bottom: 0;
+}
+@media (max-width: 772px) {
+  .part2 {
+    flex-direction: column;
+    gap: 43px;
+  }
+  .part2 .line span {
+    height: 3px;
+    width: 270px;
+  }
+  .part2 .title {
+    text-align: center;
+  }
+}
+/* end done */
+
+/* phone */
+.phone {
+  text-align: center;
+  margin: 50px auto;
+  overflow: hidden;
+}
+.phone h2 {
+  margin-bottom: 30px;
+  font-size: 60px;
+  font-weight: 300;
+  color: #3e4581;
+}
+.phone .but {
+  margin-bottom: 40px;
+}
+.phone .but button:first-of-type {
+  padding: 8px 40px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  margin: 0px 0px 8px 15px;
+  background-color: #3e4581;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.phone .but button:last-of-type {
+  padding: 8px 40px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  margin: 0px 0px 8px 15px;
+  background-color: white;
+  color: #3e4581;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.phone .but button:hover {
+  background-color: #3e4581;
+  color: white;
+  transform: scale(1.05);
+}
+
+.owl-carousel {
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-carousel .owl-nav {
+  margin-top: 15px;
+}
+.owl-carousel .owl-stage-outer {
+  padding: 50px 0px;
+}
+.owl-carousel .owl-nav span {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0px 10px;
+  font-family: cursive;
+}
+.owl-carousel .owl-stage .owl-item.active.center {
+  transform: scale(1);
+  opacity: 1;
+}
+.owl-carousel .owl-stage .owl-item {
+  transform: scale(0.9);
+  opacity: 50%;
+}
+/* end phone */
+
+/* over  */
+.over {
+  background-color: #f8f3ff;
+  margin-top: 60px;
+  padding: 30px 0px;
+}
+.over .head {
+  margin-bottom: 45px;
+}
+.over h4 {
+  font-weight: 400;
+}
+.over p {
+  font-size: 23px;
+  font-weight: 100;
+}
+.over .to .to3 {
+  text-align: center;
+}
+@media (max-width: 772px) {
+  .over {
+    text-align: center;
+  }
+  .over p {
+    margin-bottom: 45px;
+  }
+}
+/* end over */
+
+/* que2 */
+.que2 .part1 {
+  max-width: 896px;
+  display: block;
+  text-align: center;
+  margin: 30px auto;
+}
+.que2 .part1 p {
+  font-size: 20px;
+  max-width: 594px;
+  margin: 25px auto 35px;
+}
+.que2 button {
+  padding: 15px 45px;
+  color: white;
+  background-color: #f15f57;
+  border: navajowhite;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.4s;
+  outline: none;
+}
+.que2 button:hover {
+  transform: scale(1.07);
+  border-radius: 5px;
+  background-color: #ff0d00;
+}
+@media (max-width: 772px) {
+  .que2 h1 {
+    font-size: 40px;
+  }
+}
+/* end que2 */
+
+/* project */
+.project {
+  text-align: center;
+  margin-top: 85px;
+}
+.project h1 {
+  font-family: "Poppins";
+  font-size: 52px;
+  color: #3e4581;
+}
+.project img {
+  max-width: 100%;
+  max-height: 339px;
+}
+.project .other h2 {
+  margin-top: -30px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.project img:hover {
+  transform: rotateZ(4deg) scale(1.05);
+  transition: 0.4s;
+  cursor: pointer;
+}
+/* end project */
+
+/* footet */
+.footer {
+  margin: 25px auto 0px;
+}
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+  padding: 20px 0px;
+  border-bottom: 3px #707070 solid;
+}
+.footer .logo {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.footer .logo h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+.footer .all-link ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+.footer .all-link ul li {
+  margin: 0px 15px;
+  transition: 0.3s;
+}
+.footer .all-link li a {
+  font-size: 14px;
+  font-family: "Poppins";
+  color: #3e4581;
+}
+.footer .media img {
+  margin: 0px 14px;
+}
+.footer .all-link ul li:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .footer .all-link ul li {
+    margin: 0px 5px;
+  }
+}
+@media (max-width: 534px) {
+  .footer .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/* end footer */
+.copy {
+  font-size: 12px;
+  color: #adadad;
+}
