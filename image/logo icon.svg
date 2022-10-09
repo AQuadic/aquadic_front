@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="logo_icon" data-name="logo icon" transform="translate(-4499.537 -997.004)">
+    <g id="Group_39" data-name="Group 39" transform="translate(4499.537 997.004)">
+      <g id="Group_38" data-name="Group 38" transform="translate(0 0)">
+        <path id="Path_21" data-name="Path 21" d="M-302.777-474.9h-32a1,1,0,0,0-1,1v32a1,1,0,0,0,1,1h32a1,1,0,0,0,1-1v-32A1,1,0,0,0-302.777-474.9Zm-2,32h-28a1,1,0,0,1-1-1v-28a1,1,0,0,1,1-1h28a1,1,0,0,1,1,1v28a1,1,0,0,1-1,1Z" transform="translate(335.777 474.9)" fill="#2e1f26"/>
+      </g>
+      <path id="Path_22" data-name="Path 22" d="M-286.779-446.9v14a1,1,0,0,1-1,1h0a1,1,0,0,1-1-1v-12a1,1,0,0,0-1-1h-16a1,1,0,0,0-1,1v16a1,1,0,0,0,1,1h12a1,1,0,0,1,1,1h0a1,1,0,0,1-1,1h-14a1,1,0,0,1-1-1v-20a1,1,0,0,1,1-1h20A1,1,0,0,1-286.779-446.9Z" transform="translate(314.767 453.919)" fill="#2e1f26"/>
+      <g id="Group_76" data-name="Group 76" transform="translate(22.641 22.669)">
+        <rect id="Rectangle_35" data-name="Rectangle 35" width="2.141" height="2.141" rx="1.071" fill="#eaa09c" opacity="0.5"/>
+        <rect id="Rectangle_34" data-name="Rectangle 34" width="2.855" height="2.855" rx="1.428" transform="translate(0.707 0.707)" fill="#eaa09c"/>
+        <rect id="Rectangle_14" data-name="Rectangle 14" width="3.76" height="3.76" rx="1.88" transform="translate(1.386 1.73)" fill="#f15f57"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,3 +1,10 @@
+:root{
+  --main-- :#3E4581
+}
+@font-face {
+  font-family: "Gilroy ";
+  src: url(../font/Gilroy-ExtraBold.otf);
+}
 ul {
   list-style: none;
 }
@@ -25,6 +32,7 @@ a:hover {
   font-size: 14px;
   transition: 0.2s;
   font-weight: bold;
+  font-family: 'Gilroy';
 }
 .navbar button:hover {
   background-color: #ff0d00;
@@ -39,7 +47,7 @@ a:hover {
 }
 .navbar-collapse ul li a {
   font-size: 14px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   color: #3e4581;
   transition: 0.3s;
 }
@@ -85,19 +93,21 @@ a:hover {
   font-size: 64px;
   font-weight: bold;
   color: #0056a2;
-  /* font-family: Agency FB; */
+  font-family: 'Agency FB';
 }
 .pharm .about-pharm .text {
-  color: #3e4581;
+  color: var(--main--);
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: 'Gilroy';
+    font-weight: bold;
   margin: 0px auto 25px;
 }
-.pharm .about-pharm .it {
-  display: block;
+.pharm .about-pharm .tryit a {
+
   margin-bottom: 20px;
   font-size: 20px;
-  color: #ce3e3e;
+  font-family: 'Gilroy';
+  color: var(--main--);
 }
 .pharm .about-pharm .go-app,
 .pharm .about-pharm .eg {
@@ -109,9 +119,11 @@ a:hover {
   padding: 0;
 }
 .pharm .about-pharm .eg li a {
+  font-family: 'Gilroy';
   margin-right: 30px;
+  font-weight: 900;
   font-size: 20px;
-  color: #3e92ce;
+  color: var(--main--);
 }
 
 .eg li:hover {
@@ -135,49 +147,55 @@ a:hover {
   background-color: #f8f8ff;
   margin-top: 60px;
   padding: 30px 0px;
+  color: var(--main--);
+  font-family:'Gilroy', sans-serif ;
 }
 .done .container {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .done .part1 {
   text-align: center;
-  max-width: 565px;
+  max-width: 665px;
   margin-bottom: 20px;
+  font-family:'Gilroy' ;
 }
 .part1 h1 {
+  
   font-size: 60px;
-  color: #3e4581;
+  font-weight: bold;
+  
 }
 .part1 p {
-  color: #3e4581;
+  font-size:20px ;
+  font-weight:400;
+  
 }
 .part2 {
-  padding: 20px 0px;
+  padding: 34px 44px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 1087px;
   background-color: #ffffff;
-  border-radius: 15px;
-  border: 2px solid #70707075;
-  box-shadow: 0px 0px 3px #70707070;
+  border-radius: 30px;
+  
+  box-shadow: 0px 0px 2px #70707036;
 }
 .part2 .comuunity {
   min-width: fit-content;
   display: flex;
+  gap: 30px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .part2 .comuunity h2 {
   font-size: 23px;
-  font-family: "Gilroy ☞";
   font-weight: bold;
-  color: #3e4581;
 }
 .part2 .comuunity img {
   border: 1px #707070ab solid;
@@ -185,21 +203,35 @@ a:hover {
 }
 .part2 .line span {
   display: block;
-  height: 167.29px;
-  width: 3px;
+  border-radius: 3px;
+  height: 168px;
+  width: 4px;
   background-color: #707070;
 }
 .part2 .title {
+  
+  max-width: 100%;
+}
+.part2 .title p {
+ 
+  font-weight: 500;
   font-size: 24px;
-  color: #3e4581;
 }
 .part2 .title p:first-of-type {
   margin-bottom: 0;
 }
-@media (max-width: 772px) {
+
+.part2 .title span {
+  margin-top: 36px;
+  font-weight: 900;
+  font-size: 23px;
+  display: block;
+}
+@media (max-width: 992px) {
   .part2 {
     flex-direction: column;
     gap: 43px;
+    padding: 34px 0px;
   }
   .part2 .line span {
     height: 3px;
@@ -208,6 +240,12 @@ a:hover {
   .part2 .title {
     text-align: center;
   }
+}
+@media (max-width: 576px) {
+  .part2 {
+    margin: 0px 1px;
+  
+}
 }
 /* end done */
 
@@ -284,17 +322,24 @@ a:hover {
 .over {
   background-color: #f8f3ff;
   margin-top: 60px;
-  padding: 30px 0px;
+  padding: 56px 0px;
+  font-family: 'Gilroy', sans-serif;
+}
+.over .over-about .row {
+  gap: 40px;
+  margin-bottom: 48px;
 }
 .over .head {
-  margin-bottom: 45px;
+  margin-bottom: 67px;
 }
 .over h4 {
-  font-weight: 400;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 .over p {
-  font-size: 23px;
-  font-weight: 100;
+  font-size: 24px;
+  font-weight: 300;
 }
 .over .to .to3 {
   text-align: center;
@@ -310,21 +355,29 @@ a:hover {
 /* end over */
 
 /* que2 */
-.que2 .part1 {
+.que2 .que2-title {
   max-width: 896px;
   display: block;
   text-align: center;
   margin: 30px auto;
+  color: var(--main--);
+  font-family: 'Gilroy';
 }
-.que2 .part1 p {
+.que2 .que2-title h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+.que2 .que2-title h2 {
   font-size: 20px;
-  max-width: 594px;
-  margin: 25px auto 35px;
+  max-width: 612px;
+  margin: 18px auto 40px;
+  font-weight: 500;
 }
+
 .que2 button {
   padding: 15px 45px;
   color: white;
-  background-color: #f15f57;
+  background-color: #F15F57;
   border: navajowhite;
   font-weight: bold;
   font-size: 15px;
@@ -346,12 +399,13 @@ a:hover {
 /* project */
 .project {
   text-align: center;
-  margin-top: 85px;
+  margin-top: 76px;
+  color: var(--main--);
 }
 .project h1 {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 52px;
-  color: #3e4581;
+  color: var(--main--);
 }
 .project img {
   max-width: 100%;
@@ -361,7 +415,7 @@ a:hover {
   margin-top: -30px;
   font-size: 30px;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: 'Gilroy';
 }
 .project img:hover {
   transform: rotateZ(4deg) scale(1.05);
@@ -373,6 +427,7 @@ a:hover {
 /* footet */
 .footer {
   margin: 25px auto 0px;
+  color: var(--main--);
 }
 .footer .container {
   display: flex;
@@ -405,7 +460,7 @@ a:hover {
 }
 .footer .all-link li a {
   font-size: 14px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   color: #3e4581;
 }
 .footer .media img {
@@ -430,4 +485,35 @@ a:hover {
 .copy {
   font-size: 12px;
   color: #adadad;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
