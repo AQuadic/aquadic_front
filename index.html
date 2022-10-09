@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
-    
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
 
   </head>
   <body>
@@ -109,7 +112,7 @@
       </div>
     </div>
     <!-- end pharm -->
-
+    
     <!-- dond -->
     <div class="done">
       <div class="container">
@@ -138,7 +141,26 @@
       </div>
     </div>
     <!-- end done -->
+    
+    <div class="phone" data-aos="zoom-in">
+      <h2>Screens</h2>
+      <div class="but">
+        <button>Mobile</button>
+        <button>Desktop</button>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./image/login.svg" alt=""></div>
+          <div class="swiper-slide"><img src="./image/login.svg" alt=""></div>
+          <div class="swiper-slide"><img src="./image/login.svg" alt=""></div>
+          <div class="swiper-slide"><img src="./image/login.svg" alt=""></div>
+          <div class="swiper-slide"><img src="./image/login.svg" alt=""></div>
+          
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
 
+    </div>
     <!-- phone -->
     <div class="phone" data-aos="zoom-in">
       <h2>Screens</h2>
@@ -261,7 +283,37 @@
       AOS.init();
     </script>
     
-     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          "@1.50": {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>

@@ -1,11 +1,11 @@
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
-    stagePadding: 5,
+    stagePadding: 50,
     loop: false,
 
-    margin: 5,
+    margin: 100,
     nav: true,
-    responsiveClass: true,
+    responsiveClass: false,
     center: true,
     responsive: {
       0: {

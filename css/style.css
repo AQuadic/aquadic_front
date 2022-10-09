@@ -517,3 +517,30 @@ a:hover {
   height: 100%;
   object-fit: cover;
 }
+
+/*add in swiper */
+div#swiper-wrapper-d5e84288847e1a33 {
+  /* margin: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  max-width: 231px;
+}
+/**/
+.owl-stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.owl-item {
+  max-width: 300px;
+}
