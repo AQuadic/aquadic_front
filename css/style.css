@@ -308,7 +308,7 @@ span.swiper-pagination-bullet {
   height: 4px;
   border-radius: 5px;
 }
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+.swiper-button-prev:after,  .swiper-button-next:after {
   font-size: 30px;
   content: 'prev';
   color: #3e4581;
