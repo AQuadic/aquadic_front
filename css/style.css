@@ -48,7 +48,8 @@ a:hover {
 .navbar-collapse ul li a {
   font-size: 14px;
   font-family: 'Poppins';
-  color: #3e4581;
+  font-weight: 500;
+  color: var(--main--);
   transition: 0.3s;
 }
 .navbar-collapse ul li a:hover {
