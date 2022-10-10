@@ -330,10 +330,16 @@ span.swiper-pagination-bullet {
 .over .head {
   margin-bottom: 67px;
 }
+.over h2 {
+  font-weight: bold;
+  font-size: 44px;
+  font-family: 'Gilroy';
+}
 .over h4 {
   font-size: 28px;
   font-weight: 500;
   margin-bottom: 15px;
+  font-family: 'Gilroy';
 }
 .over p {
   font-size: 24px;
