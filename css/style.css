@@ -118,6 +118,9 @@ a:hover {
   flex-wrap: wrap;
   padding: 0;
 }
+.pharm .about-pharm .go-app{
+margin: 16px 0px 24px 0px;
+}
 .pharm .about-pharm .eg li a {
   font-family: 'Gilroy';
   margin-right: 30px;
@@ -252,8 +255,9 @@ a:hover {
 /* phone */
 .phone {
   text-align: center;
-  margin: 50px auto;
+  margin: 97px auto 70px;
   overflow: hidden;
+  padding-bottom: 100px;
 }
 .phone h2 {
   margin-bottom: 30px;
@@ -262,7 +266,7 @@ a:hover {
   color: #3e4581;
 }
 .phone .but {
-  margin-bottom: 40px;
+  margin-bottom: 55px;
 }
 .phone .but button:first-of-type {
   padding: 8px 40px;
@@ -321,9 +325,9 @@ a:hover {
 /* over  */
 .over {
   background-color: #f8f3ff;
-  margin-top: 60px;
   padding: 56px 0px;
   font-family: 'Gilroy', sans-serif;
+  margin-bottom: 56px;
 }
 .over .over-about .row {
   gap: 40px;
@@ -405,6 +409,7 @@ a:hover {
 .project h1 {
   font-family: 'Poppins';
   font-size: 52px;
+  margin-bottom: 64px;
   color: var(--main--);
 }
 .project img {
@@ -434,7 +439,7 @@ a:hover {
   align-items: center;
   justify-content: space-evenly;
   gap: 5px;
-  padding: 20px 0px;
+  padding: 20px 0px 50px;
   border-bottom: 3px #707070 solid;
 }
 .footer .logo {
@@ -479,6 +484,7 @@ a:hover {
   .footer .container {
     flex-direction: column;
     gap: 10px;
+    padding: 20px 0px 30px;
   }
 }
 /* end footer */
@@ -486,61 +492,15 @@ a:hover {
   font-size: 12px;
   color: #adadad;
 }
-.swiper {
-  width: 100%;
-  height: 100%;
+.swiper{
+  padding-bottom: 50px;
+}
+.swiper-pagination {
+  margin: 52px auto 12px;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/*add in swiper */
-div#swiper-wrapper-d5e84288847e1a33 {
-  /* margin: auto; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.swiper-slide {
-  max-width: 231px;
-}
-/**/
-.owl-stage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.owl-item {
-  max-width: 300px;
+span.swiper-pagination-bullet {
+  width: 15px;
+  height: 4px;
+  border-radius: 5px;
 }

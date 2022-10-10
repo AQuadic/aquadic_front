@@ -142,25 +142,7 @@
     </div>
     <!-- end done -->
     
-    <div class="phone" data-aos="zoom-in">
-      <h2>Screens</h2>
-      <div class="but">
-        <button>Mobile</button>
-        <button>Desktop</button>
-      </div>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./image/login.svg" alt=""></div>
-          <div class="swiper-slide"><img src="./image/login.svg" alt=""></div>
-          <div class="swiper-slide"><img src="./image/login.svg" alt=""></div>
-          <div class="swiper-slide"><img src="./image/login.svg" alt=""></div>
-          <div class="swiper-slide"><img src="./image/login.svg" alt=""></div>
-          
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-    </div>
+   
     <!-- phone -->
     <div class="phone" data-aos="zoom-in">
       <h2>Screens</h2>
@@ -168,13 +150,26 @@
         <button>Mobile</button>
         <button>Desktop</button>
       </div>
-      <div class="owl-carousel owl-theme">
-        <div class="item"><img src="./image/login.svg" alt="phones" /></div>
-        <div class="item"><img src="./image/login.svg" alt="phones" /></div>
-        <div class="item"><img src="./image/login.svg" alt="phones" /></div>
-        <div class="item"><img src="./image/login.svg" alt="phones" /></div>
-        <div class="item"><img src="./image/login.svg" alt="phones" /></div>
+     <!--here swiper-->
+     <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="./image/login.svg" alt=""></div>
+        <div class="swiper-slide"><img src="./image/login.svg" alt=""></div>
+        <div class="swiper-slide"> <img src="./image/login.svg" alt=""></div>
+        <div class="swiper-slide"><img src="./image/login.svg" alt=""></div>
+        <div class="swiper-slide"> <img src="./image/login.svg" alt=""></div>
+       
       </div>
+      <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+    
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      
+    </div>
 
     </div>
     <!-- end phone -->
@@ -287,32 +282,58 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          "@0.00": {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          "@0.75": {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          "@1.00": {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
-          "@1.50": {
-            slidesPerView: 4,
-            spaceBetween: 50,
-          },
-        },
-      });
+     const swiper = new Swiper('.swiper', {
+    
+  loop: false,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  
+  
+  slidesPerView: 1,
+  spaceBetween: 10,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    280: {
+      slidesPerView: 1,
+      spaceBetween: 15
+    },
+    // when window width is >= 480px
+    450: {
+      slidesPerView: 1.5,
+      spaceBetween: 15
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 35
+    },
+    900: {
+      slidesPerView: 3,
+      spaceBetween: 33
+    }, 
+     110: {
+      slidesPerView: 4,
+      spaceBetween: 33
+    },
+     1440: {
+      slidesPerView: 4.5,
+      spaceBetween: 75
+    },
+    
+  }
+ 
+});
     </script>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
