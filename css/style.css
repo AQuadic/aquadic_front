@@ -35,9 +35,11 @@ a:hover {
   font-family: 'Gilroy';
 }
 .navbar button:hover {
-  background-color: #ff0d00;
+  background-color: #eee;
+  color: #f15f57;
   transform: scale(1.05);
   border-radius: 8px;
+  border: 1px solid #f15f57;
 }
 .navbar-collapse {
   text-align: center;
@@ -230,6 +232,7 @@ margin: 16px 0px 24px 0px;
   font-weight: 900;
   font-size: 23px;
   display: block;
+  letter-spacing: 0.2px;
 }
 @media (max-width: 992px) {
   .part2 {
@@ -238,8 +241,7 @@ margin: 16px 0px 24px 0px;
     padding: 34px 0px;
   }
   .part2 .line span {
-    height: 3px;
-    width: 270px;
+   display: none;
   }
   .part2 .title {
     text-align: center;
@@ -269,18 +271,8 @@ margin: 16px 0px 24px 0px;
 .phone .but {
   margin-bottom: 55px;
 }
-.phone .but button:first-of-type {
-  padding: 8px 40px;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  margin: 0px 0px 8px 15px;
-  background-color: #3e4581;
-  color: white;
-  font-weight: 500;
-  transition: 0.3s;
-}
-.phone .but button:last-of-type {
+
+.phone .but button {
   padding: 8px 40px;
   outline: none;
   border-radius: 5px;
@@ -296,7 +288,11 @@ margin: 16px 0px 24px 0px;
   color: white;
   transform: scale(1.05);
 }
-
+.phone-hover{
+  background-color: #3e4581;
+  color: white;
+  transform: scale(1.05);
+}
 .swiper{
   padding-bottom: 50px;
 }
@@ -309,10 +305,20 @@ span.swiper-pagination-bullet {
   height: 4px;
   border-radius: 5px;
 }
+
+.swiper-button-next, .swiper-button-prev {
+  background-color: whitesmoke;
+  padding: 26px;
+  border-radius: 50%;
+  box-shadow: 0 0 7px #0056a3;
+}
 .swiper-button-prev:after,  .swiper-button-next:after {
   font-size: 30px;
   content: 'prev';
   color: #3e4581;
+}
+.swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events {
+  padding-bottom: 65px;
 }
 /* end phone */
 
@@ -391,7 +397,9 @@ span.swiper-pagination-bullet {
 .que2 button:hover {
   transform: scale(1.07);
   border-radius: 5px;
-  background-color: #ff0d00;
+  background-color: #eee;
+  color: #f15f57;
+  border: 1px solid #f15f57;
 }
 @media (max-width: 772px) {
   .que2 h1 {
@@ -440,7 +448,7 @@ span.swiper-pagination-bullet {
   justify-content: space-evenly;
   gap: 5px;
   padding: 20px 0px 50px;
-  border-bottom: 3px #707070 solid;
+ 
 }
 .footer .logo {
   display: flex;
