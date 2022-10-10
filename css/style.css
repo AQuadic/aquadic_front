@@ -201,7 +201,7 @@ margin: 16px 0px 24px 0px;
   font-weight: bold;
 }
 .part2 .comuunity img {
-  border: 1px #707070ab solid;
+
   border-radius: 40px;
 }
 .part2 .line span {
@@ -307,6 +307,11 @@ span.swiper-pagination-bullet {
   width: 15px;
   height: 4px;
   border-radius: 5px;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  font-size: 30px;
+  content: 'prev';
+  color: #3e4581;
 }
 /* end phone */
 
