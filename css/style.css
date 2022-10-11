@@ -1,3 +1,8 @@
+.hema{
+  background-color: #3e4581;
+  color: white;
+  transform: scale(1.05);
+}
 :root{
   --main-- :#3E4581
 }
@@ -283,16 +288,8 @@ margin: 16px 0px 24px 0px;
   font-weight: 500;
   transition: 0.3s;
 }
-.phone .but button:hover {
-  background-color: #3e4581;
-  color: white;
-  transform: scale(1.05);
-}
-.phone-hover{
-  background-color: #3e4581;
-  color: white;
-  transform: scale(1.05);
-}
+
+
 .swiper{
   padding-bottom: 50px;
 }
@@ -329,9 +326,21 @@ span.swiper-pagination-bullet {
   font-family: 'Gilroy', sans-serif;
   margin-bottom: 56px;
 }
-.over .over-about .row {
-  gap: 40px;
-  margin-bottom: 48px;
+.over-about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+.over .one , .over .to {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 80px;
+  flex-wrap: wrap;
+} 
+.over .page {
+  max-width: 337px;
 }
 .over .head {
   margin-bottom: 67px;
@@ -353,11 +362,25 @@ span.swiper-pagination-bullet {
 }
 .over .to .to3 {
   text-align: center;
-}
-@media (max-width: 772px) {
+} 
+@media (max-width: 992px) {
+  .over .one , .over .to {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    flex-wrap: wrap;
+  } 
   .over {
     text-align: center;
   }
+  .over .page {
+    max-width: 80%;
+  }
+}
+@media (max-width: 772px) {
+ 
   .over p {
     margin-bottom: 45px;
   }
